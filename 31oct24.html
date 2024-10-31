@@ -9,6 +9,7 @@
 	<input type="text" id = 'myText'>
 	<div id="result"></div>
 	<button onclick="f1()">Длина строки</button>
+	<button onclick="f2()">Сделать все буквы заглавными</button>
 </body>
 <script>
 	let myText = document.getElementById('myText');
@@ -17,6 +18,11 @@
 	function f1() {
 		let string = myText.value;
 		result.innerText = string.length;
+	}
+
+	function f2() {
+		let string = myText.value;
+		result.innerText = string.toUpperCase();
 	}
 </script>
 </html>
