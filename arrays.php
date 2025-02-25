@@ -69,5 +69,24 @@ for ($i=0; $i < sizeof($randArr); $i++) {
 	}
 }
 print_r($fndArr);
+echo "<hr>";
+
+$Narr=[];
+for ($i=0; $i < 25; $i++) { 
+	$Narr[]=rand(10,50);
+}
+print_r($Narr);
+echo "<hr>";
+
+for ($i=0; $i < sizeof($Narr)-1; $i++) { 
+	if ($Narr[$i]>$Narr[$i+1]) {
+		$temp=$Narr[$i+1];
+		$Narr[$i+1]=$Narr[$i];
+		$Narr[$i]=$temp;
+	}
+}
+foreach ($Narr as $elem) {
+	echo "$elem ";
+}
 
 ?>
